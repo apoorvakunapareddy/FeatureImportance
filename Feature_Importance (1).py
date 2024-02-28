@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import chi2
-data = pd.read_csv("/Users/divya.mereddy/Downloads/DataScienceProjects-master/Feature_Selection/test.csv")
+data = pd.read_csv("/Users/Apoorva/Downloads/DataScienceProjects-master/Feature_Selection/test.csv")
 X = data.iloc[:,0:20]  #independent columns
 y = data.iloc[:,-1]    #target column i.e price range
 #apply SelectKBest class to extract top 10 best features
@@ -112,7 +112,7 @@ def select_features(X_train, y_train, X_test):
 	return X_train_fs, X_test_fs, fs
 
 # load the dataset
-X, y = load_dataset('/Users/divya.mereddy/Downloads/DataScienceProjects-master/breast-cancer-wisconsin.csv')
+X, y = load_dataset('/Users/Apoorva/Downloads/DataScienceProjects-master/breast-cancer-wisconsin.csv')
 # split into train and test sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=1)
 # prepare input data
